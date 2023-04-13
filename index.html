@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Search Website</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Logo start -->
+        <div class="logo">
+            <div class="container">
+                <p>Movie<span>Core.</span></p>
+            </div>
+        </div>
+        <!-- Logo End -->
+
+        <!-- Search Bar Start -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movies:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box"
+                    onkeyup="findmovies()">
+
+                <div class="search-list" id="search-list">
+                    <!-- List Here -->
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="./images/hulk.jfif">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Guardians Of the Galaxy Vol.2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Search Bar End -->
+
+        <!-- Result Container Start -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!-- Movie Information Here -->
+                    <!-- <div class="movie-poster">
+                        <img src="./images/marvel studios.jfif" alt="movie Poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Guardians Of the Galaxy Vol.2</h3>
+                            <ul class="movie-misc-info">
+                                <li class="year">Year: 2017</li>
+                                <li class="rated">Ratings: PG-13</li>
+                                <li class="released">Released: 05 May 2017</li>
+                            </ul>
+                            <p class="genre"><b>Genre:</b> Action, Advanture, Comedy</p>
+                            <p class="write"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                            <p class="actors"><b>Actors:</b> Chris Pratt, Zoe Saldana, Dava Bustista</p>
+                            <p class="plot"><b>Plot:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Minima sequi architecto quae soluta ea hic obcaecati, omnis distinctio. Minus, eaque
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptatem explicabo ea?
+                            </p>
+                            <p class="language"><b>Language:</b>English</p>
+                            <p class="awards"><b><i class="fas fa-award"></i></b> Nominated For 1 Oscar</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Result Container End -->
+    </div>
+
+    <!-- js Link -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
