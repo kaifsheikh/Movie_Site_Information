@@ -13,7 +13,6 @@ async function loadmovies(searchterm) {
 
     const res = await fetch(`${URL}`);
     const data = await res.json();
-    // console.log(data);
     if (data.Response == "True") {
         displaymovielist(data.Search);
     }
@@ -35,7 +34,6 @@ function displaymovielist(movies) {
     searchlist.innerHTML = "";
     for (let idx = 0; idx < movies.length; idx++) {
         let movielistitem = document.createElement('div');
-        // console.log(movielistitem);
         movielistitem.dataset.id = movies[idx].imdbID;
         movielistitem.classList.add('search-list-item');
         if (movies[idx].type == "N/A") {
@@ -66,12 +64,10 @@ function loadmovieDetails() {
     searchlistmovies.forEach(movie => {
 
         movie.addEventListener("click", async () => {
-            // console.log(movie.dataset.id);
             searchlist.classList.add('hide-search-list');
             moviesearchbox.value = "";
             const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=a2a41b5d`);
             const moviedetails = await result.json();
-            // console.log(moviedetails);
             displaymoviedetails(moviedetails);
         });
     });
